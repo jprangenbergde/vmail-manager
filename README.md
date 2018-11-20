@@ -1,11 +1,20 @@
 # Manage your vmail accounts with ease
 
+## Table of contents
+
+* [Installation](#prerequisites)
+* [Configure database connection](#configure-database-connection)
+* [Dovecot](#dovecot)
+* [Database](#database)
+* [License](#license)
+* [Acknowledgments](#acknowledgments)
+
 ## Installation
 ```
 composer require jprangenbergde/vmail-manager 
 ```
 
-## Configure Database Connection
+## Configure database connection
 ```
 DATABASE_URL=mysql://user:password@127.0.0.1:3306/database
 ```
@@ -60,3 +69,12 @@ CREATE TABLE `tlspolicies` (
     UNIQUE KEY (`domain`)
 );
 ```
+
+## License
+
+This project is licensed under the MIT License
+
+## Acknowledgments
+
+* Thanks to [Thomas Leister](https://github.com/ThomasLeister) for your
+  mailserver installation instructions
