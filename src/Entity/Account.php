@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity()
@@ -38,6 +39,7 @@ class Account
     private $password = '';
 
     /**
+     * @Assert\Length(min=5)
      * @var string
      */
     private $passwordInput = '';
@@ -117,17 +119,17 @@ class Account
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPasswordInput(): string
+    public function getPasswordInput(): ?string
     {
         return $this->passwordInput;
     }
 
     /**
-     * @param string $passwordInput
+     * @param string|null $passwordInput
      */
-    public function setPasswordInput(string $passwordInput): void
+    public function setPasswordInput(?string $passwordInput): void
     {
         $this->passwordInput = $passwordInput;
     }
