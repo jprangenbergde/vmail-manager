@@ -4,12 +4,18 @@
 
 ## Table of contents
 
+* [Features](#features)
 * [Installation](#installation)
 * [Configure database connection](#configure-database-connection)
 * [Dovecot](#dovecot)
 * [Database](#database)
 * [License](#license)
 * [Acknowledgments](#acknowledgments)
+
+## Features
+* [x] Manage domains, accounts, aliases and tls policies
+* [x] Fully translated into english and german 
+* [x] Response webinterface 
 
 ## Installation
 ```
