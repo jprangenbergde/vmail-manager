@@ -2,7 +2,6 @@ easy_admin:
     site_name: 'vmail-manager'
     disabled_actions: ['show']
     design:
-        form_theme: 'vertical'
         assets:
             css:
                 - 'css/style.css'
