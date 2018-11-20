@@ -2,7 +2,12 @@
 
 ## Installation
 ```
-composer require jprangenbergde/vmail-manager
+composer require jprangenbergde/vmail-manager 
+```
+
+## Configure Database Connection
+```
+DATABASE_URL=mysql://user:password@127.0.0.1:3306/database
 ```
 
 ## Dovecot
