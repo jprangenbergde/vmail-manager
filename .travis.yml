@@ -1,0 +1,36 @@
+language: php
+
+os:
+  - linux
+
+git:
+  depth: 1
+
+php:
+  - 7.1
+
+sudo: false
+
+install:
+  - travis_retry composer install --no-interaction
+  - wget -c -nc --retry-connrefused --tries=0 https://github.com/php-coveralls/php-coveralls/releases/download/v2.0.0/php-coveralls.phar
+  - chmod +x php-coveralls.phar
+  - php php-coveralls.phar --version
+
+before_script:
+  - mkdir -p build/logs
+  - ls -al
+
+script:
+  - ./bin/phpunit --coverage-clover build/logs/clover.xml
+
+after_success:
+  - travis_retry php php-coveralls.phar -v
+
+branches:
+  only: master
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
