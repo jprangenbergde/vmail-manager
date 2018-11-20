@@ -11,9 +11,11 @@ easy_admin:
                   - { property: 'domain', label: 'label.account.domain' }
                   - { property: 'quota', label: 'label.account.quota' }
                   - { property: 'enabled', label: 'label.account.enabled' }
+                  - { property: 'sendOnly', label: 'label.account.sendOnly' }
             form:
                 fields:
                   - { property: 'username', label: 'label.account.username' }
                   - { property: 'domain', label: 'label.account.domain' }
                   - { property: 'quota', label: 'label.account.quota' }
                   - { property: 'quota', label: 'label.account.enabled' }
+                  - { property: 'sendOnly', label: 'label.account.sendOnly' }

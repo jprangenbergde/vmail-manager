@@ -44,6 +44,12 @@ class Account
     private $enabled = false;
 
     /**
+     * @ORM\Column(name="sendonly", type="boolean")
+     * @var bool
+     */
+    private $sendOnly = false;
+
+    /**
      * @return int
      */
     public function getId(): int
@@ -113,5 +119,21 @@ class Account
     public function setEnabled(bool $enabled): void
     {
         $this->enabled = $enabled;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSendOnly(): bool
+    {
+        return $this->sendOnly;
+    }
+
+    /**
+     * @param bool $sendOnly
+     */
+    public function setSendOnly(bool $sendOnly): void
+    {
+        $this->sendOnly = $sendOnly;
     }
 }
