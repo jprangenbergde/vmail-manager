@@ -1,5 +1,7 @@
 # Manage your vmail accounts with ease
 
+![Screenshot](https://jens-prangenberg.de/images/portfolio/vmail-manager.png)
+
 ## Table of contents
 
 * [Installation](#installation)
