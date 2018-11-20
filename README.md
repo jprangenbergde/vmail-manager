@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-* [Installation](#prerequisites)
+* [Installation](#installation)
 * [Configure database connection](#configure-database-connection)
 * [Dovecot](#dovecot)
 * [Database](#database)
