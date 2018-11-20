@@ -1,5 +1,8 @@
 # Manage your vmail accounts with ease
 
+[![Build Status](https://travis-ci.org/jprangenbergde/vmail-manager.svg?branch=master)](https://travis-ci.org/jprangenbergde/vmail-manager)
+[![Coverage Status](https://coveralls.io/repos/github/jprangenbergde/vmail-manager/badge.svg?branch=master)](https://coveralls.io/github/jprangenbergde/vmail-manager?branch=master)
+
 ![Screenshot](https://jens-prangenberg.de/images/portfolio/vmail-manager.png)
 
 ## Table of contents
