@@ -1,0 +1,21 @@
+Domain: Domain
+Account: Postfach
+Alias: Alias
+
+menu.domains: Domains
+menu.accounts: Postfächer
+menu.aliases: Aliases
+
+title.domains: Domains
+title.accounts: Postfächer
+title.aliases: Aliases
+
+label.domain.domain: Domain
+label.account.username: Benutzer
+label.account.domain: Domain
+label.account.quota: Speicherplatz
+label.account.enabled: Aktiv
+label.alias.source.username: Benutzer
+label.alias.source.domain: Domain
+label.alias.destination.username: Benutzer
+label.alias.destination.domain: Domain

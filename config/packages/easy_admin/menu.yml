@@ -1,0 +1,6 @@
+easy_admin:
+    design:
+        menu:
+            - { entity: 'Domain' }
+            - { entity: 'Account' }
+            - { entity: 'Alias' }

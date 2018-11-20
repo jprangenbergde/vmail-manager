@@ -1,0 +1,13 @@
+easy_admin:
+    entities:
+        Domain:
+            class: App\Entity\Domain
+            label: 'menu.domains'
+            list:
+                title: 'title.domains'
+                sort: ['domain', 'ASC']
+                fields:
+                  - { property: 'domain', label: 'label.domain.domain' }
+            form:
+                fields:
+                  - { property: 'domain', label: 'label.domain.domain' }

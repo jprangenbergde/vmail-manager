@@ -1,0 +1,19 @@
+easy_admin:
+    entities:
+        Alias:
+            class: App\Entity\Alias
+            label: 'menu.aliases'
+            list:
+                title: 'title.aliases'
+                sort: ['sourceDomain', 'ASC']
+                fields:
+                  - { property: 'sourceUsername', label: 'label.alias.source.username' }
+                  - { property: 'sourceDomain', label: 'label.alias.source.domain' }
+                  - { property: 'destinationUsername', label: 'label.alias.destination.username' }
+                  - { property: 'destinationDomain', label: 'label.alias.destination.domain' }
+            form:
+                fields:
+                  - { property: 'sourceUsername', label: 'label.alias.source.username' }
+                  - { property: 'sourceDomain', label: 'label.alias.source.domain' }
+                  - { property: 'destinationUsername', label: 'label.alias.destination.username' }
+                  - { property: 'destinationDomain', label: 'label.alias.destination.domain' }

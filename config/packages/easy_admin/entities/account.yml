@@ -1,0 +1,19 @@
+easy_admin:
+    entities:
+        Account:
+            class: App\Entity\Account
+            label: 'menu.accounts'
+            list:
+                title: 'title.accounts'
+                sort: ['username', 'ASC']
+                fields:
+                  - { property: 'username', label: 'label.account.username' }
+                  - { property: 'domain', label: 'label.account.domain' }
+                  - { property: 'quota', label: 'label.account.quota' }
+                  - { property: 'enabled', label: 'label.account.enabled' }
+            form:
+                fields:
+                  - { property: 'username', label: 'label.account.username' }
+                  - { property: 'domain', label: 'label.account.domain' }
+                  - { property: 'quota', label: 'label.account.quota' }
+                  - { property: 'quota', label: 'label.account.enabled' }
