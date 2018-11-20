@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="domains")
  * @author Jens Prangenberg <mail@jens-prangenberg.de>
  */
-class Domain
+final class Domain
 {
     /**
      * @ORM\Id
@@ -25,25 +25,16 @@ class Domain
      */
     private $domain = '';
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getDomain(): string
     {
         return $this->domain;
     }
 
-    /**
-     * @param string $domain
-     */
     public function setDomain(string $domain): void
     {
         $this->domain = $domain;

@@ -3,6 +3,7 @@
 namespace App\EventSubscriber;
 
 use App\Entity\Account;
+use App\Service\CryptGenerator;
 use EasyCorp\Bundle\EasyAdminBundle\Event\EasyAdminEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
@@ -10,8 +11,18 @@ use Symfony\Component\EventDispatcher\GenericEvent;
 /**
  * @author Jens Prangenberg <mail@jens-prangenberg.de>
  */
-class PasswordSubscriber implements EventSubscriberInterface
+final class PasswordSubscriber implements EventSubscriberInterface
 {
+    /**
+     * @var CryptGenerator
+     */
+    private $generator;
+
+    public function __construct(CryptGenerator $generator)
+    {
+        $this->generator = $generator;
+    }
+
     public static function getSubscribedEvents(): array
     {
         return [
@@ -32,8 +43,7 @@ class PasswordSubscriber implements EventSubscriberInterface
             return;
         }
 
-        $salt = substr(sha1((string)rand()), 0, 16);
-        $entity->setPassword(crypt($entity->getPasswordInput(), '$6$' . $salt));
+        $entity->setPassword($this->generator->hash($entity->getPasswordInput()));
 
         $event->offsetSet('entity', $entity);
     }

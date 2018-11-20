@@ -7,7 +7,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AdminController as BaseAdminContr
 /**
  * @author Jens Prangenberg <mail@jens-prangenberg.de>
  */
-class AdminController extends BaseAdminController
+final class AdminController extends BaseAdminController
 {
 
 }

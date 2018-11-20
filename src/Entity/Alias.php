@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="aliases")
  * @author Jens Prangenberg <mail@jens-prangenberg.de>
  */
-class Alias
+final class Alias
 {
     /**
      * @ORM\Id
@@ -51,65 +51,41 @@ class Alias
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getSourceUsername(): string
     {
         return $this->sourceUsername;
     }
 
-    /**
-     * @param string $sourceUsername
-     */
     public function setSourceUsername(string $sourceUsername): void
     {
         $this->sourceUsername = $sourceUsername;
     }
 
-    /**
-     * @return string
-     */
     public function getSourceDomain(): string
     {
         return $this->sourceDomain;
     }
 
-    /**
-     * @param string $sourceDomain
-     */
     public function setSourceDomain(string $sourceDomain): void
     {
         $this->sourceDomain = $sourceDomain;
     }
 
-    /**
-     * @return string
-     */
     public function getDestinationUsername(): string
     {
         return $this->destinationUsername;
     }
 
-    /**
-     * @param string $destinationUsername
-     */
     public function setDestinationUsername(string $destinationUsername): void
     {
         $this->destinationUsername = $destinationUsername;
     }
 
-    /**
-     * @return string
-     */
     public function getDestinationDomain(): string
     {
         return $this->destinationDomain;
     }
 
-    /**
-     * @param string $destinationDomain
-     */
     public function setDestinationDomain(string $destinationDomain): void
     {
         $this->destinationDomain = $destinationDomain;
