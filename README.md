@@ -15,19 +15,19 @@ composer require jprangenbergde/vmail-manager
 ```
 
 ## Configure database connection
-```
+```ini
 DATABASE_URL=mysql://user:password@127.0.0.1:3306/database
 ```
 
 ## Dovecot
-```
+```ini
 password_query = SELECT username AS user, domain, password FROM accounts WHERE username = '%n' AND domain = '%d' and enabled = true;
 user_query = SELECT concat('*:storage=', quota, 'M') AS quota_rule FROM accounts WHERE username = '%n' AND domain = '%d' AND sendonly = false;
 iterate_query = SELECT username, domain FROM accounts where sendonly = false;
 ```
 
 ## Database
-```
+```mysql
 CREATE TABLE `domains` (
     `id` int unsigned NOT NULL AUTO_INCREMENT,
     `domain` varchar(255) NOT NULL,
@@ -72,7 +72,7 @@ CREATE TABLE `tlspolicies` (
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT license
 
 ## Acknowledgments
 
