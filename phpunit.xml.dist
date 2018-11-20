@@ -8,9 +8,9 @@
          bootstrap="src/.bootstrap.php"
 >
     <php>
-        <ini name="error_reporting" value="-1" />
-        <env name="APP_ENV" value="test" />
-        <env name="SHELL_VERBOSITY" value="-1" />
+        <ini name="error_reporting" value="-1"/>
+        <env name="APP_ENV" value="test"/>
+        <env name="SHELL_VERBOSITY" value="-1"/>
     </php>
 
     <testsuites>
@@ -21,11 +21,12 @@
 
     <filter>
         <whitelist>
-            <directory>src</directory>
+            <directory>src/EventSubscriber</directory>
+            <directory>src/Service</directory>
         </whitelist>
     </filter>
 
     <listeners>
-        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
+        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener"/>
     </listeners>
 </phpunit>
