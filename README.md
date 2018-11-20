@@ -15,7 +15,7 @@
 ## Features
 * [x] Manage domains, accounts, aliases and tls policies
 * [x] Fully translated into english and german 
-* [x] Response webinterface 
+* [x] Responsive webinterface 
 
 ## Installation
 ```
