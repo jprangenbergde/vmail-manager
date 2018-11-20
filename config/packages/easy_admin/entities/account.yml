@@ -16,6 +16,7 @@ easy_admin:
                 fields:
                   - { property: 'username', label: 'label.account.username' }
                   - { property: 'domain', label: 'label.account.domain' }
+                  - { property: 'passwordInput', label: 'label.account.password', type: 'password' }
                   - { property: 'quota', label: 'label.account.quota' }
-                  - { property: 'quota', label: 'label.account.enabled' }
+                  - { property: 'enabled', label: 'label.account.enabled' }
                   - { property: 'sendOnly', label: 'label.account.sendOnly' }

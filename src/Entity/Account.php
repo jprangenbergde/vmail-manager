@@ -32,6 +32,17 @@ class Account
     private $domain = '';
 
     /**
+     * @ORM\Column(type="string")
+     * @var string
+     */
+    private $password = '';
+
+    /**
+     * @var string
+     */
+    private $passwordInput = '';
+
+    /**
      * @ORM\Column(type="integer")
      * @var int
      */
@@ -87,6 +98,38 @@ class Account
     public function setDomain(string $domain): void
     {
         $this->domain = $domain;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPassword(): string
+    {
+        return $this->password;
+    }
+
+    /**
+     * @param string $password
+     */
+    public function setPassword(string $password): void
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPasswordInput(): string
+    {
+        return $this->passwordInput;
+    }
+
+    /**
+     * @param string $passwordInput
+     */
+    public function setPasswordInput(string $passwordInput): void
+    {
+        $this->passwordInput = $passwordInput;
     }
 
     /**

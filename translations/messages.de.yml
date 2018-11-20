@@ -13,6 +13,7 @@ title.aliases: Aliases
 label.domain.domain: Domain
 label.account.username: Benutzer
 label.account.domain: Domain
+label.account.password: Passwort
 label.account.quota: Speicherplatz
 label.account.enabled: Aktiv
 label.account.sendOnly: Nur Senden
