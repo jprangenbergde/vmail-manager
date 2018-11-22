@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="domains")
  * @author Jens Prangenberg <mail@jens-prangenberg.de>
  */
-final class Domain
+class Domain
 {
     /**
      * @ORM\Id

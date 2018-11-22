@@ -10,7 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Table(name="accounts")
  * @author Jens Prangenberg <mail@jens-prangenberg.de>
  */
-final class Account
+class Account
 {
     /**
      * @ORM\Id

@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="aliases")
  * @author Jens Prangenberg <mail@jens-prangenberg.de>
  */
-final class Alias
+class Alias
 {
     /**
      * @ORM\Id
