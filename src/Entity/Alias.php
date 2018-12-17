@@ -44,6 +44,12 @@ class Alias
     private $destinationDomain = '';
 
     /**
+     * @ORM\Column(type="boolean")
+     * @var bool
+     */
+    private $enabled = false;
+
+    /**
      * @return int
      */
     public function getId(): int
@@ -89,5 +95,15 @@ class Alias
     public function setDestinationDomain(string $destinationDomain): void
     {
         $this->destinationDomain = $destinationDomain;
+    }
+
+    public function isEnabled(): bool
+    {
+        return $this->enabled;
+    }
+
+    public function setEnabled(bool $enabled): void
+    {
+        $this->enabled = $enabled;
     }
 }
