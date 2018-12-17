@@ -21,3 +21,4 @@ label.alias.source.username: Benutzer
 label.alias.source.domain: Domain
 label.alias.destination.username: Benutzer
 label.alias.destination.domain: Domain
+label.alias.enabled: Aktiv

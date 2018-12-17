@@ -11,9 +11,11 @@ easy_admin:
                   - { property: 'sourceDomain', label: 'label.alias.source.domain' }
                   - { property: 'destinationUsername', label: 'label.alias.destination.username' }
                   - { property: 'destinationDomain', label: 'label.alias.destination.domain' }
+                  - { property: 'enabled', label: 'label.alias.enabled' }
             form:
                 fields:
                   - { property: 'sourceUsername', label: 'label.alias.source.username' }
                   - { property: 'sourceDomain', label: 'label.alias.source.domain' }
                   - { property: 'destinationUsername', label: 'label.alias.destination.username' }
                   - { property: 'destinationDomain', label: 'label.alias.destination.domain' }
+                  - { property: 'enabled', label: 'label.alias.enabled' }
